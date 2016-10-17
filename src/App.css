@@ -1,0 +1,44 @@
+@import './main.css';
+@import './styleguide.css';
+
+.App {
+  align-items: space-between;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: space-around;
+
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+.Cage {
+  padding: 75px;
+  flex: 1;
+
+  min-height: 100%;
+  margin-bottom: -100px;
+}
+
+.Cage:after {
+  content: "";
+  display: block;
+}
+
+img.nick {
+  margin: 10px;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
