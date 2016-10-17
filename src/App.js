@@ -1,14 +1,16 @@
 import React, { Component } from 'react';
 import './App.css';
 import TheCage from './TheCage';
-import Footer from './Footer';
+import Movie from './Movie';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <h1>Enter the Cage</h1>
+        <h1>Face the Cage</h1>
         <TheCage />
+        <hr />
+        <Movie />
       </div>
     );
   }

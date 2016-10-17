@@ -1,13 +1,13 @@
 import React from "react";
+import nicks from "./lib/nicks.js";
 
 const TheCage = () => {
   return (
-    <div className="Cage">
-      <div class="grid grid-response">
-        <img className="nick" alt="calm-image" src="http://www.placecage.com/200/300" />
-        <img className="nick" alt="gray-image" src="http://www.placecage.com/g/200/300" />
-        <img className="nick" alt="crazy-image" src="http://www.placecage.com/c/200/300" />
-        <img className="nick" alt="gif-image" src="http://www.placecage.com/gif/200/300" />
+    <div className="Cage grid grid-response">
+      <div className="cages">
+        {nicks.map((nick, i) => (
+          <img key={i} className="nick" alt={nick.alt} src={nick.image} />
+        ))}
       </div>
     </div>
   );
