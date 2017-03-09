@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import TheCage from './TheCage';
+import Movie from './Movie';
 
 class App extends Component {
   render() {
@@ -9,6 +10,7 @@ class App extends Component {
         <h1>Face the Cage</h1>
         <TheCage />
         <hr />
+        <Movie />
       </div>
     );
   }
